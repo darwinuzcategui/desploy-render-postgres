@@ -26,7 +26,7 @@ import { ConfigModule } from '@nestjs/config';
         ssl:
         process.env.POSTGRES_SSL == 'true'
         ? {
-          rejectUnaauthorized: false,
+          rejectUnauthorized: false,
         }
         : null,
       },
